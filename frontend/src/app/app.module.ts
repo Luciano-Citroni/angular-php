@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewEventComponent } from './pages/new-event/new-event.component';
+import { EventFormComponent } from './components/event-form/event-form.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NewEventComponent } from './pages/new-event/new-event.component';
     HeaderComponent,
     AboutComponent,
     HomeComponent,
-    NewEventComponent
+    NewEventComponent,
+    EventFormComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@ nav{
   width: 100%;
   justify-content: space-between;
   padding: 20px;
-  background-color: #292929;
+  background-color: var(--primary);
   top: 0;
 
 }

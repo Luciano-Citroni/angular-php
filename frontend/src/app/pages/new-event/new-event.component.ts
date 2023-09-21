@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-event.component.css']
 })
 export class NewEventComponent {
-
+  btnValue = "Enviar";
 }
