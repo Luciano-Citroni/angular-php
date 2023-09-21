@@ -8,6 +8,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { NewEventComponent } from './pages/new-event/new-event.component';
 import { EventFormComponent } from './components/event-form/event-form.component';
 
+
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +24,10 @@ import { EventFormComponent } from './components/event-form/event-form.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
