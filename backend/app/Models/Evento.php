@@ -15,7 +15,7 @@
 
 
             if($conn->rowCount() > 0){
-                $result = $conn->fetch(PDO::FETCH_OBJ);
+                $result = $conn->fetchAll(PDO::FETCH_OBJ);
 
                 return $result;
             }

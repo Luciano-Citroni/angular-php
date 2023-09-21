@@ -1,1 +1,31 @@
-<h1>home page</h1>
+<div class="container-home">
+    <h2>Veja os ultimos eventos</h2>
+    <div class="search-container">
+        <form>
+            <fa-icon [icon]="faSearch"></fa-icon>
+            <input type="text" placeholder="Busque por um evento" (input)="search($event)">
+
+        </form>
+    </div>
+    <div *ngIf="eventos.length > 0; else noEventos" class="container-eventos">
+
+        <div class="card" *ngFor="let evento of eventos" routerLink="evento/{{evento.id}}">
+            <div class="img">
+                img
+            </div>
+            <h2>{{evento.nome}}</h2>
+            <div class="container-info">
+                <p>Às {{evento.horario}} em {{evento.localizacao}}</p>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #noEventos>
+        <div class="container-empty-eventos">
+            <h2>Ainda não tem nenhum evento cadastrado</h2>
+            <input type="button" value="Cadastrar" class="btn" routerLink="/eventos/new">
+        </div>
+
+    </ng-template>
+
+</div>

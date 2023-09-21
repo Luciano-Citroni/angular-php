@@ -1,0 +1,13 @@
+.container-new-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+
+}
+
+.container-new-item h2{
+    margin-bottom: 2rem;
+
+}

@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
+import { Evento } from 'src/app/Models/Evento';
 
 @Component({
   selector: 'app-event-form',
@@ -7,6 +8,7 @@ import {FormGroup, FormControl, Validators} from '@angular/forms';
   styleUrls: ['./event-form.component.css']
 })
 export class EventFormComponent {
+  @Output() onSubmit = new EventEmitter<Evento>();
   @Input() btnValue!: string;
   eventForm!: FormGroup;
 
@@ -34,8 +36,8 @@ export class EventFormComponent {
     if(this.eventForm.invalid){
       return;
     }
-
-    return console.log('deu');
+    
+    return this.onSubmit.emit(this.eventForm.value);
 
   }
 }

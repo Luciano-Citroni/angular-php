@@ -1,2 +1,4 @@
-<h2>asda</h2>
-<app-event-form [btnValue]="btnValue"/>
+<div class="container-new-item">
+    <h2>Cadastre um novo Evento</h2>
+    <app-event-form [btnValue]="btnValue" (onSubmit)="createHandler($event)"/>
+</div>

@@ -11,6 +11,9 @@ import { EventFormComponent } from './components/event-form/event-form.component
 
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EventoComponent } from './pages/evento/evento.component';
+
 
 
 @NgModule({
@@ -20,14 +23,16 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AboutComponent,
     HomeComponent,
     NewEventComponent,
-    EventFormComponent
+    EventFormComponent,
+    EventoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
