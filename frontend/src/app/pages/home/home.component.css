@@ -71,9 +71,7 @@
 
 }
 
-@media(max-width <= 750){
-  .card{}
-}
+
 
 .search-container{
   margin-top: 1rem;

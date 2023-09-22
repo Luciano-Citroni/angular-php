@@ -1,10 +1,16 @@
 <div class="container-evento">
     <div class="card-evento">
         <div class="form">
+            <div class="container-img">
+                img
+            </div>
             <div class="container-item">
-                {{evento!.nome}}
+                <h2>{{evento?.nome}}</h2>
+            </div>
+            <div class="container-item">
+                <h2 class="subtitle">Às {{evento?.horario}} em {{evento?.localizacao}}</h2>
             </div>
         </div>
-        <input type="button" value="Excluir">
+        <input type="button" value="Excluir" class="btn" (click)="deleteHandle()">
     </div>
 </div>

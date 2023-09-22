@@ -30,5 +30,10 @@ export class EventoService {
     return this.http.get<Evento>(url);
   }
 
+  deleteEventosById(id: number): Observable<{}>{
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.delete<{}>(url);
+  }
+
 }
 

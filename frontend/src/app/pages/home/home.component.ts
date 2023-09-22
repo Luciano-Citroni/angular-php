@@ -3,7 +3,7 @@ import { EventoService } from 'src/app/service/evento.service';
 import { Evento } from 'src/app/Models/Evento';
 import {environment} from '../../utils/environments';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
+import {faImage} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,7 @@ export class HomeComponent {
   baseApiUrl = environment.baseApiUrl;
 
   faSearch = faSearch;
+  faImage = faImage;
   searchTerm: string = '';
 
   constructor(private eventoService: EventoService){}
